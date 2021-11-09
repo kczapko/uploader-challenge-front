@@ -68,6 +68,7 @@ export default {
         try {
           this.progress = 0;
           this.state = 'uploading';
+          this.error = '';
 
           const res = await axios.post('', formData, {
             onUploadProgress: pEv => {
